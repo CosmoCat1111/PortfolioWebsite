@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Leah Lisberg</title>
+        <link rel="stylesheet" type="text/css" href="./index.css">
+        <link rel="shortcut icon" type="img/jpg" href="./images/girl_icon.png">
+
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+        
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#Slideshow">Slideshow</a>
+            <a href="#About">About Me</a>
+            <a href="#GitHub">GitHub Link</a>
+            <!-- Onclick and ondblclick functions added to open and close the contact form -->
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+
+        </div>
+
+        <!--Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="./images/video (1080p).mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Leah's Portfolio</h1>
+                <p class="center">
+                    <strong>
+                    <q>Together we can create a world of joy and love, together we are strong and powerful.
+                        <br>Care means so many things, I would like to help support you in caring for yourself, others, and your loved ones.
+                        <br>There is so much abundance out there, the broken link is the path to get the right information to you, I hope to help solve some of those issue here by providing a way to direct you to some of the much needed information.
+                    </q>
+                    <br> 
+                    <br>
+                    <br> My name is Leah Lisberg. Welcome to my portfolio website. On it, I will tell you about my background, experience and things that bring me great joy I would like to share with you.
+                    <br>
+                    <br> I hope there is much information to support you here, and that you're able to share with your loved ones as well! 
+                    </strong>
+                </p>
+        </div>
+
+        <!-- Slideshow section added -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background"> 
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/profilepictureofme.jpg" alt="Picture of myself">
+                        <div class="text">I'm available to assist you on your project!</div>
+                    </div>
+                    <!-- Slide 2 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/profile5.jpg" alt="HTML, CSS, and JS logos"> 
+                        <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                    </div>
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/Python (4).png" alt="Python logo">
+                        <div class="text">the popular programming language Python,</div>
+                    </div>
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/c--4.svg" alt="C# logo">
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
+                    </div>
+                    <!-- Slide 5 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/Azure-SQL.png" alt="SQL logo"> 
+                        <div class="text">back end development, databases and SQL.</div>
+                    </div>
+                    <!-- Slide 6 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/profile6.jpg" alt="I am available for your ideas!"> 
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div> 
+                    </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between the slideshow images and the dots -->
+
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                </div>
+            </div>
+        </div>
+
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="./images/touch-ga3ecf48d6_1280.jpg" alt="From birth to death, every moment inbetween is valuable.">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About Me</h1>
+                <p>
+                    I am a very new software developer, and am very excited for this new adventure! As a mother of five, including a set of twins, I am severaly passionate about connection.  This gives me extreme motivation to helps others get connected not just with each other but with the world and whatever it is they need to feel better within a positive environment. 
+                    <br>
+                    <br>I will be a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>Software Developer Boot Camp, trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
+                    <br>
+                    <br>I will be a full-stack developer and would love to work with you on your project, your ideas or even just brainstorm.<a onclick="openForm()" class="contact">Contact me below!</a>
+                </p>
+            </div>
+        </div>
+
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GitHub Link</h1>
+                <p>
+                    You can view my school projects, and any future projects here on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/CosmoCat1111" target="_blank">CosmoCat1111</a></p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/the-tech-academy" target="_blank"><img src="images/GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!--Contact section-->
+
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                 <form action="https://formspree.io/f/moqoqady" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+                     <h1>Contact</h1>
+                     <label for="name"><b>Name</b></label>
+                       <input type="text" placeholder="Type your name here" name="name" required>   
+                     <label for="phone"><b>Phone</b></label>
+                       <input type="text" placeholder="Type your phone number here" name="phone">
+                     <label for="email"><b>Email</b></label>		
+                       <input type="text" placeholder="Type your email address here" name="email" required>
+                     <label for="message"><b>Message</b></label>
+                       <input type="text" placeholder="Type your message here" name="message">
+          
+                     <button type="submit" class="btn">SUBMIT</button>
+                     <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                 </form>
+            </div>
+         </div>
+ <script src="./JS/index.js" defer> </script>
+        <!--Footer section-->
+        <footer>
+                <p class="center">&copy;Leah Lisberg as CosmoCat1111 inc., <a href="https://www.linkedin.com/in/leah-lisberg-2023b5239/" target="_blank">Linkedin for me! Check me out!</a></p>
+                <br>
+        </footer>
+    </body>
+</html>
